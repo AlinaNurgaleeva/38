@@ -1,0 +1,9 @@
+from Euler import is_pandigital
+
+def pe38():
+    for n in range(9487, 9213, -1):
+        p = str(n*1) + str(n*2)
+        if is_pandigital(p): return p
+    return "None found."
+
+print "Largest 9-digit 1 to 9 pandigital number  =", pe38()
